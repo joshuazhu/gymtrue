@@ -1,0 +1,10 @@
+{
+  "lambdaMemory": 128,
+  "lambdaTimeout": 60,
+  "lambdaLogRetentionInDays": 60,
+  "logLevel": "debug",
+  "logDisableRedaction": "true",
+  "envName": "dev",
+  "stackName": "gymtrue-server",
+  "region": "ap-southeast-2"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gymtrue-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "start": "yarn run compile && node ./dist/index.js",
+    "deploy:dev": "cdk deploy gymtrue-server-dev --progress events --log --require-approval \"never\""
+  },
+  "dependencies": {
+    "@apollo/server": "^4.0.0",
+    "apollo-server-lambda": "^3.10.3",
+    "aws-cdk-lib": "^2.46.0",
+    "aws-sdk": "^2.1233.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "aws-cdk": "^2.46.0",
+    "esbuild": "^0.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
